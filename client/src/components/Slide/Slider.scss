@@ -1,0 +1,30 @@
+.css-1gu5j5z-MuiPaper-root-MuiCard-root{
+    height: auto !important;
+}
+.css-14ys7yk-MuiContainer-root{
+    width: 1200px !important;
+    max-width: none !important;
+}
+.css-1gu5j5z-MuiPaper-root-MuiCard-root  {
+    overflow: visible !important;
+}
+
+
+.slick-slider .slick-initialized{
+    position: relative !important;
+    .slick-arrow .slick-prev{
+        position: absolute !important;
+        top: 50% !important;
+        left:0% !important;
+        transform: translate(50% 50%);
+    }
+    .slick-arrow .slick-next{
+        top: 0% !important;
+        right:50% !important;
+        position: absolute !important;
+    }
+}
+.slick-track{
+    transform: none !important;
+    display: flex !important;
+}

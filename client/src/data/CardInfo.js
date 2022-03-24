@@ -6,11 +6,14 @@ import { Container,
     
   } 
   from '@mui/material';
+
+const style = {height:'154px',position:'relative',width:'inherit'}
+
 export const info =[
     {  id:1,
        tag:  <iframe
                 src='https://www.youtube.com/embed/J7eYhM6wXPo'
-                width='auto'
+                width='inherit'
                 height='auto'
                 title='zz'
             />,
@@ -24,7 +27,7 @@ export const info =[
                 </CardContent>
     },
     {id:2,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
+        tag: <div style={style} >
                 <img src="./assets/img/img1.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
             </div>
         ,
@@ -39,7 +42,7 @@ export const info =[
     
     },
     {id:3,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
+        tag: <div style={style}>
                 <img src="./assets/img/img2.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
             </div>
         ,
@@ -55,7 +58,7 @@ export const info =[
     }
     ,
     {id:4,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
+        tag: <div style={style}>
                 <img src="./assets/img/img3.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
             </div>
         ,
@@ -70,10 +73,12 @@ export const info =[
     
     },
     {id:5,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
-                <img src="./assets/img/img4.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
-            </div>
-        ,
+        tag:<iframe
+                src='https://www.youtube.com/embed/oG5KQiU6WXg'
+                width='inherit'
+                height='auto'
+                title='zz'
+            />,
         content:<CardContent>
         <Typography variant="caption" >
         Token Free Airdrop!
@@ -85,7 +90,7 @@ export const info =[
     
     },
     {id:6,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
+        tag: <div style={style}>
                 <img src="./assets/img/img5.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
             </div>
         ,
@@ -100,7 +105,7 @@ export const info =[
     
     },
     {id:7,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
+        tag: <div style={style}>
                 <img src="./assets/img/img6.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
             </div>
         ,
@@ -115,7 +120,7 @@ export const info =[
     
     },
     {id:8,
-        tag: <div style={{height:'154px',position:'relative',width:'inherit'}}>
+        tag: <div style={style}>
                 <img src="./assets/img/img7.png" alt="" style={{position:'absolute',width:'304px',height:'154px',objectFit:'cover'}} />
             </div>
         ,

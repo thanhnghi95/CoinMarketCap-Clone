@@ -1,0 +1,29 @@
+.hightlight_container{
+
+    height: auto;
+    width: 100%;
+    .hightlight_box{
+        padding: 0px 60px;
+        .hightlight_nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .hightlight_nav_title{
+                width: 1240px;
+                .hightlight_nav_title2{
+                    display: flex;
+                }
+            }
+         
+            .hightlight_nav_button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+          
+        }
+    }
+}
+.css-qxlm9z-MuiButtonBase-root-MuiButton-root{
+    min-width: 20px !important;
+}

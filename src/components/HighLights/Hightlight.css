@@ -1,0 +1,47 @@
+.hightlight_container {
+  height: auto;
+  width: 100%;
+}
+
+.hightlight_container .hightlight_box {
+  padding: 0px 60px;
+}
+
+.hightlight_container .hightlight_box .hightlight_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hightlight_container .hightlight_box .hightlight_nav .hightlight_nav_title {
+  width: 1240px;
+}
+
+.hightlight_container .hightlight_box .hightlight_nav .hightlight_nav_title .hightlight_nav_title2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hightlight_container .hightlight_box .hightlight_nav .hightlight_nav_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.css-qxlm9z-MuiButtonBase-root-MuiButton-root {
+  min-width: 20px !important;
+}
+/*# sourceMappingURL=Hightlight.css.map */

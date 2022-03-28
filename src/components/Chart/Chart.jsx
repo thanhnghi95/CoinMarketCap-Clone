@@ -51,7 +51,7 @@ const Chart = ({listCoins , coin}) => {
                   startIcon={ <Button 
                                 sx=
                                 {{color:'#000',fontSize:'15px !important', fontWeight:600,textTransform:'Capitalize'}}
-                                startIcon={<img src={coin.image.thumb}/>}>
+                                startIcon={<img alt='' src={coin.image.thumb}/>}>
                                       {coin.name}
                               </Button> }
                   endIcon={<Button variant="text" sx={{fontWeight:600 ,width:'5px',background:'#F0F6FF',textTransform:'Capitalize'}}>Buy</Button>}

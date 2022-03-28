@@ -1,9 +1,5 @@
 import './Header.scss';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import ListSubheader from '@mui/material/ListSubheader';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+
 import { styled} from '@mui/system';
 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -13,15 +9,11 @@ import DiamondIcon from '@mui/icons-material/Diamond';
 import SearchIcon from '@mui/icons-material/Search';
 import { Button, InputBase } from '@mui/material';
 import * as React from 'react';
-import { useState } from 'react';
-import { getNames} from 'country-list'
 
 // Redux:
 import { SetPopUp } from '../../redux/action/action';
-import { useDispatch , useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
-//
-const countries = getNames()
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -71,7 +63,29 @@ const Header = ({popUpInitial}) => {
 
     return (
         <nav className='header'>   
-           
+           <div className='content'>
+                <div className='wraper'>
+              
+                    <div className='form'>
+                        <div className='button lang'>
+                        
+                        </div>
+                        <div className='button currency'>
+                            <Button
+                              startIcon={<PaidIcon sx={{color:'rgb(22,199,132)'}}/>}
+                              endIcon={<ArrowDropDownIcon sx={{color:'#000'}}/>}
+                              sx={{color:'#000', fontWeight:600 , fontSize:'15px'}}
+                              onClick={handlePopUp}
+                            > 
+                              USD
+                            </Button>
+                        </div>
+                        <div className='button mode'>
+                            <DarkModeIcon/>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='menu'>
                 <div className='box'>
                     <div className='combo_box'>

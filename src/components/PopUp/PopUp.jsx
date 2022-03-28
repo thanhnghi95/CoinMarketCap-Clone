@@ -14,12 +14,12 @@ import CloseIcon from '@mui/icons-material/Close';
 import SearchIcon from '@mui/icons-material/Search';
 import { popularCur,Bitcoin,fiatCurrencies,cryptocurrencies } from '../../data/Currencies';
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import { useState } from 'react';
 
 // Redux:
 import { SetPopUp } from '../../redux/action/action';
-import { useDispatch , useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',

@@ -18,9 +18,11 @@ import { useState } from 'react';
 
 const Chart = ({listCoins , coin}) => {
     const [star , setStar] = useState('');
+   
     const handleStar = () =>{
-      for(let i=0; i < listCoins.length-1;  i++ ){
+      for(let i=0; i < listCoins.length;  i++ ){
         if(coin.id ===listCoins[i].id){
+
           setStar(coin.id)
           break
         }
@@ -28,7 +30,8 @@ const Chart = ({listCoins , coin}) => {
       if(coin.id===star){
         setStar('')
       }
-  }
+    }
+ 
 
     return (
  
@@ -139,7 +142,7 @@ const Chart = ({listCoins , coin}) => {
                 />
                 }
               </TableCell>
-              <TableCell>Chart</TableCell>
+       
 
             </TableRow>
   

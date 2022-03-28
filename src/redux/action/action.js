@@ -11,3 +11,9 @@ export const SetCard = (payload)=>({
     type:'SET_CARD',
     mode:payload
 })
+
+export const SetStar= (payload)=>({
+    type:'SET_STAR',
+    star:payload
+})
+

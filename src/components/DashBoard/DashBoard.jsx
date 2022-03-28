@@ -21,10 +21,10 @@ import ViewComfyIcon from '@mui/icons-material/ViewComfy';
 import ArrowDropUpRoundedIcon from '@mui/icons-material/ArrowDropUpRounded';
 import { useState,useEffect } from 'react';
 
-
 const DashBoard = () => {
     const [time , setTime] = useState(true)
     const [listCoins , setListCoins] = useState([]);
+
     useEffect(()=>{
         if(time){
             setTimeout(()=>{
@@ -47,7 +47,7 @@ const DashBoard = () => {
         }
 },[time])
 
-
+    console.log(listCoins)
 
     const style = {color:'#58667E',background:'#fff',fontSize:'10px',fontWeight:'600'}
     const style2 = {fontSize:'10px',color:'#000',fontWeight:'bold',background:'#EFF2F5'}
@@ -79,14 +79,13 @@ const DashBoard = () => {
         
 ]   
     const [number,setNumber]= useState(10)
-    console.log(number)
     const handleChange = (e)=>{
         e.preventDefault()
         setNumber(e.target.value)
     }
-    
+ 
 
-    
+
 
 
 
@@ -183,7 +182,6 @@ const DashBoard = () => {
                                 <TableCell><Button variant='string' sx={{fontWeight:600 , fontSize:12, textTransform:'capitalize'}} >Market Cap</Button></TableCell>
                                 <TableCell><Button variant='string' sx={{fontWeight:600 , fontSize:12, textTransform:'capitalize'}} >Volume(24h)</Button></TableCell>
                                 <TableCell><Button variant='string' sx={{fontWeight:600 , fontSize:12, textTransform:'capitalize'}} >Circulating Supply</Button></TableCell>
-                                <TableCell><Button variant='string' sx={{fontWeight:600 , fontSize:12, textTransform:'capitalize'}} >Last 7 Days</Button></TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
